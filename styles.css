@@ -68,3 +68,35 @@ a.code-link {
 a.code-link:hover {
     text-decoration: underline;
 }
+
+.index {
+    background: #e0f7fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.index h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #007777;
+}
+
+.index ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.index ul li {
+    margin-bottom: 10px;
+}
+
+.index ul li a {
+    text-decoration: none;
+    color: #0077aa;
+}
+
+.index ul li a:hover {
+    text-decoration: underline;
+}
