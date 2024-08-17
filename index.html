@@ -32,7 +32,7 @@
     <div class="section" id="section-0-1">
         <h3>1 (Formal) Statement of the Problem</h3>
         <p>The Russian Cards Problem is formally stated as follows:</p>
-        <p class="speaker">Speaker says: From a deck of seven known cards numbered 0 to 6, Alice (A) and Bob (B) each draw three cards, leaving one card for Eve (C). The task is for Alice and Bob to communicate their respective hands to each other openly, in a way that does not allow Eve to deduce the identity of any card in their hands.</p>
+        <p class="speaker">From a deck of seven known cards numbered 0 to 6, Alice (A) and Bob (B) each draw three cards, leaving one card for Eve (C). The task is for Alice and Bob to communicate their respective hands to each other openly, in a way that does not allow Eve to deduce the identity of any card in their hands.</p>
         <p>This puzzle introduces strict conditions that add layers of complexity:</p>
         <ul>
             <li><strong>No lies allowed:</strong> Alice and Bob must always tell the truth in their statements. Deception is not an option.</li>
@@ -40,7 +40,7 @@
             <li><strong>Sequential announcements:</strong> Alice and Bob take turns announcing their propositions. The order of communication is critical to the problem’s dynamics.</li>
         </ul>
         <p>The challenge here is significant: how can Alice and Bob successfully convey their hands without revealing any information to Eve? This problem forces us to think carefully about not just what is said, but how and when it is said.</p>
-        <p class="speaker">Speaker: Take a moment to consider how you might solve this puzzle. Remember, your solution must be generalizable—meaning it should work for any card distribution, not just a specific case!</p>
+        <p class="speaker">Take a moment to consider how you might solve this puzzle. Remember, your solution must be generalizable—meaning it should work for any card distribution, not just a specific case!</p>
     </div>
 
     <div class="section" id="section-0-2">
@@ -51,14 +51,14 @@
         <p>Imagine the following scenario:</p>
         <p class="speaker">Alice says: "I have 0, 1, 2, or Bob has 0, 1, 2," and Bob says: "I have 3, 4, 5, or Alice has 3, 4, 5."</p>
         <p>This might seem like a valid approach at first. After all, both Alice and Bob are making statements that cover the possibilities of their own and each other’s hands. However, this solution is fatally flawed because it relies on the assumption that ambiguity alone can protect information.</p>
-        <p class="speaker">Speaker: The problem with this approach is that Eve, knowing that Alice and Bob cannot lie, can infer crucial information. Since Alice does not know Bob’s cards, Eve can deduce that Alice must be holding 0, 1, and 2. The initial ambiguity is resolved, and the strategy fails.</p>
+        <p class="speaker">The problem with this approach is that Eve, knowing that Alice and Bob cannot lie, can infer crucial information. Since Alice does not know Bob’s cards, Eve can deduce that Alice must be holding 0, 1, and 2. The initial ambiguity is resolved, and the strategy fails.</p>
         <p class="visuals">Visuals: To illustrate this, consider showing the possibility of Bob having a hand other than 0, 1, 2, and how Eve can still narrow down Alice’s cards.</p>
 
         <h4>False Solution 2</h4>
         <p>Let’s consider another approach:</p>
         <p class="speaker">Alice says: "I don’t have 6," and Bob says: "Neither have I."</p>
         <p>On the surface, this seems like a logical step. By eliminating a card from their hands, Alice and Bob appear to be narrowing down the possibilities. However, this solution also has a critical flaw.</p>
-        <p class="speaker">Speaker: If Eve holds card 5, she can immediately deduce that Bob must have card 6. The seemingly innocent elimination of card 6 gives away too much information, allowing Eve to pinpoint Bob’s cards. Thus, this strategy also fails.</p>
+        <p class="speaker">If Eve holds card 5, she can immediately deduce that Bob must have card 6. The seemingly innocent elimination of card 6 gives away too much information, allowing Eve to pinpoint Bob’s cards. Thus, this strategy also fails.</p>
         <p>These false solutions illustrate the delicate balance required in the Russian Cards Problem. Any attempt to communicate information must be carefully crafted to avoid giving Eve the upper hand.</p>
     </div>
 
@@ -82,9 +82,8 @@
         <p><strong>Mutual Knowledge:</strong> This is knowledge shared by all participants. For instance, both Alice and Bob know that Eve holds a card, but they don’t know which one. Mutual knowledge plays a critical role in their ability to communicate securely.</p>
         <p><strong>Common Knowledge:</strong> This is a step further—knowledge that everyone knows, and everyone knows that everyone knows, and so on. In the Russian Cards Problem, common knowledge is carefully managed to ensure that Eve does not gain the upper hand.</p>
         <p><strong>Distributed Knowledge:</strong> This refers to information that is spread out among the participants. Alice and Bob each have pieces of the puzzle, and only by combining their knowledge can they fully understand the situation.</p>
-        <p>Understanding these concepts helps explain why the correct solution works. Alice and Bob’s communication strategy hinges on creating mutual knowledge that excludes Eve, while avoiding creating common knowledge that would give away their hands. The Russian Cards Problem, therefore, is as much about strategic communication as it is about logical reasoning.</p>
-        <p>For a more interactive experience, check out this <a href="https://rkirsling.github.io/modallogic/" class="code-link">modal logic tool</a> that demonstrates these principles in action. This tool could be a fantastic addition to your understanding of the topic, allowing you to visualize how different types of knowledge interact in logical puzzles like the Russian Cards Problem.</p>
-    </div>
+        <p>Understanding these concepts helps explain why the correct solution works. Alice and Bob’s communication strategy hinges on creating mutual knowledge that excludes Eve, while avoiding creating common knowledge that would give away their hands. The Russian Cards Problem, therefore, is as much about strategic communication as it is about logical reasoning.</p>    
+</div>
 
     <div class="section" id="section-0-5">
         <h3>5 Alternative Solutions</h3>
