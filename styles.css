@@ -103,3 +103,8 @@ a.code-link:hover {
 .index ul li a:hover {
     text-decoration: underline;
 }
+
+.scaleA {
+    width: 100%;
+    max-width: max-content;
+  }
