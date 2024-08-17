@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Russian Cards Problem: A Deep Dive</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <h1>The Russian Cards Problem: A Deep Dive</h1>
 
@@ -25,14 +27,20 @@
     <!-- Update IDs in each section -->
     <div class="section" id="section-0">
         <h2>0 Core of the Problem</h2>
-        <p>The Russian Cards Problem is a captivating puzzle that not only challenges our logical reasoning but also provides deep insights into the nature of knowledge and communication. It’s a problem that, at first glance, seems simple but quickly reveals layers of complexity as you attempt to solve it. In this article, we will explore the problem in detail, dissecting each potential solution, understanding why some fail, and finally arriving at the correct approach.</p>
-        <p>Let’s start by setting the stage: there are 140 possible combinations of how the cards can be distributed among the three players involved in the problem. Each combination presents a unique scenario, but the core challenge remains the same—how can Alice and Bob communicate their hands to each other without Eve learning anything about their cards?</p>
+        <p>The Russian Cards Problem is a captivating puzzle that not only challenges our logical reasoning but also provides deep insights into the nature of knowledge and communication. It’s a problem that, at first glance, seems simple but quickly reveals
+            layers of complexity as you attempt to solve it. In this article, we will explore the problem in detail, dissecting each potential solution, understanding why some fail, and finally arriving at the correct approach.</p>
+        <p class="speaker">Welcome to the "Crazy Mule", the most popular saloon west of the Mississippi. Everyday folks from all over the country come here to have fun and retreat from their laborious lifes. Today however there are two very special guests: Awful August
+            and Bad Berta, two experienced tricksters. Currently they are playing against Evesdropper Earl who is known for his perceptiveness. Fortunately for the tricksters they don’t rely on any deceptions, in fact their trick is a set of public communications
+            that allows them to secretly exchange information.</p>
+        <p> Now you might wonder how this is supposed to work. How can you cheat by publicly communicating without revealing the information you exchanged? The easy answer to that would be to use some form of encryption, but those are designed around written
+            communication and become unintelligible gibberish if you tried to use them verbally.</p>
     </div>
 
     <div class="section" id="section-0-1">
         <h3>1 (Formal) Statement of the Problem</h3>
         <p>The Russian Cards Problem is formally stated as follows:</p>
-        <p class="speaker">From a deck of seven known cards numbered 0 to 6, Alice (A) and Bob (B) each draw three cards, leaving one card for Eve (C). The task is for Alice and Bob to communicate their respective hands to each other openly, in a way that does not allow Eve to deduce the identity of any card in their hands.</p>
+        <p class="speaker">From a deck of seven known cards numbered 0 to 6, Alice (A) and Bob (B) each draw three cards, leaving one card for Eve (C). The task is for Alice and Bob to communicate their respective hands to each other openly, in a way that does not allow
+            Eve to deduce the identity of any card in their hands.</p>
         <p>This puzzle introduces strict conditions that add layers of complexity:</p>
         <ul>
             <li><strong>No lies allowed:</strong> Alice and Bob must always tell the truth in their statements. Deception is not an option.</li>
@@ -45,13 +53,16 @@
 
     <div class="section" id="section-0-2">
         <h3>2 Why Your Solution (Probably) Is False</h3>
-        <p>At first glance, the problem might seem straightforward, and you might come up with a seemingly clever solution right away. However, many initial solutions fall short when examined closely. Let’s explore a couple of these false solutions to understand the common pitfalls.</p>
+        <p>At first glance, the problem might seem straightforward, and you might come up with a seemingly clever solution right away. However, many initial solutions fall short when examined closely. Let’s explore a couple of these false solutions to understand
+            the common pitfalls.</p>
 
         <h4>False Solution 1</h4>
         <p>Imagine the following scenario:</p>
         <p class="speaker">Alice says: "I have 0, 1, 2, or Bob has 0, 1, 2," and Bob says: "I have 3, 4, 5, or Alice has 3, 4, 5."</p>
-        <p>This might seem like a valid approach at first. After all, both Alice and Bob are making statements that cover the possibilities of their own and each other’s hands. However, this solution is fatally flawed because it relies on the assumption that ambiguity alone can protect information.</p>
-        <p class="speaker">The problem with this approach is that Eve, knowing that Alice and Bob cannot lie, can infer crucial information. Since Alice does not know Bob’s cards, Eve can deduce that Alice must be holding 0, 1, and 2. The initial ambiguity is resolved, and the strategy fails.</p>
+        <p>This might seem like a valid approach at first. After all, both Alice and Bob are making statements that cover the possibilities of their own and each other’s hands. However, this solution is fatally flawed because it relies on the assumption
+            that ambiguity alone can protect information.</p>
+        <p class="speaker">The problem with this approach is that Eve, knowing that Alice and Bob cannot lie, can infer crucial information. Since Alice does not know Bob’s cards, Eve can deduce that Alice must be holding 0, 1, and 2. The initial ambiguity is resolved,
+            and the strategy fails.</p>
         <p class="visuals">PLATZHALTER</p>
 
         <h4>False Solution 2</h4>
@@ -70,36 +81,51 @@
         <p>Consider the following scenario where the cards are dealt as follows: Alice holds 0, 1, 2; Bob holds 3, 4, 5; and Eve holds card 6.</p>
         <p class="speaker">Alice announces: "I have one of 012, 034, 056, 135, 246," and Bob follows with: "Eve has card 6."</p>
         <p>Let’s break down why this solution works:</p>
-        <p>Alice’s announcement covers a range of possible hands she might hold, each containing one card from her actual hand (012) and two cards from other possible combinations. This creates a scenario where, no matter which card Eve holds, Alice can still have multiple possible hands in play.</p>
-        <p>Bob’s announcement then confirms the card that Eve holds. Since Alice’s hand is included in her set of possibilities, Bob can safely narrow down the options without revealing specific cards. This ensures that after both announcements, Alice and Bob have successfully communicated their hands to each other without Eve being able to deduce which cards they hold.</p>
+        <p>Alice’s announcement covers a range of possible hands she might hold, each containing one card from her actual hand (012) and two cards from other possible combinations. This creates a scenario where, no matter which card Eve holds, Alice can
+            still have multiple possible hands in play.</p>
+        <p>Bob’s announcement then confirms the card that Eve holds. Since Alice’s hand is included in her set of possibilities, Bob can safely narrow down the options without revealing specific cards. This ensures that after both announcements, Alice and
+            Bob have successfully communicated their hands to each other without Eve being able to deduce which cards they hold.</p>
         <p class="visuals">PLATZHALTER</p>
-        <p>This solution works because it leverages the concept of mutual knowledge—both Alice and Bob know something that Eve does not, and they use this to their advantage. By carefully crafting their statements, they can communicate without giving away too much.</p>
+        <p>This solution works because it leverages the concept of mutual knowledge—both Alice and Bob know something that Eve does not, and they use this to their advantage. By carefully crafting their statements, they can communicate without giving away
+            too much.</p>
     </div>
 
     <div class="section" id="section-0-4">
         <h3>4 Understanding the Mechanisms of Knowledge</h3>
-        <p>The Russian Cards Problem is not just a puzzle about communication—it’s also a rich exploration of the mechanisms of knowledge. To fully appreciate the solution we’ve discussed, it’s important to understand the different types of knowledge at play: mutual, common, and distributed knowledge.</p>
-        <p><strong>Mutual Knowledge:</strong> This is knowledge shared by all participants. For instance, both Alice and Bob know that Eve holds a card, but they don’t know which one. Mutual knowledge plays a critical role in their ability to communicate securely.</p>
-        <p><strong>Common Knowledge:</strong> This is a step further—knowledge that everyone knows, and everyone knows that everyone knows, and so on. In the Russian Cards Problem, common knowledge is carefully managed to ensure that Eve does not gain the upper hand.</p>
+        <p>The Russian Cards Problem is not just a puzzle about communication—it’s also a rich exploration of the mechanisms of knowledge. To fully appreciate the solution we’ve discussed, it’s important to understand the different types of knowledge at
+            play: mutual, common, and distributed knowledge.</p>
+        <p><strong>Mutual Knowledge:</strong> This is knowledge shared by all participants. For instance, both Alice and Bob know that Eve holds a card, but they don’t know which one. Mutual knowledge plays a critical role in their ability to communicate
+            securely.</p>
+        <p><strong>Common Knowledge:</strong> This is a step further—knowledge that everyone knows, and everyone knows that everyone knows, and so on. In the Russian Cards Problem, common knowledge is carefully managed to ensure that Eve does not gain the
+            upper hand.</p>
         <p><strong>Distributed Knowledge:</strong> This refers to information that is spread out among the participants. Alice and Bob each have pieces of the puzzle, and only by combining their knowledge can they fully understand the situation.</p>
-        <p>Understanding these concepts helps explain why the correct solution works. Alice and Bob’s communication strategy hinges on creating mutual knowledge that excludes Eve, while avoiding creating common knowledge that would give away their hands. The Russian Cards Problem, therefore, is as much about strategic communication as it is about logical reasoning.</p>    
-</div>
+        <p>Understanding these concepts helps explain why the correct solution works. Alice and Bob’s communication strategy hinges on creating mutual knowledge that excludes Eve, while avoiding creating common knowledge that would give away their hands.
+            The Russian Cards Problem, therefore, is as much about strategic communication as it is about logical reasoning.</p>
+    </div>
 
     <div class="section" id="section-0-5">
         <h3>5 Alternative Solutions</h3>
-        <p>While the solution provided by Van Ditmarsch is elegant and effective, it’s not the only way to approach the Russian Cards Problem. Other methods, including number-theoretic and combinatorial approaches, offer alternative ways to solve the puzzle. These methods often involve more advanced mathematical concepts, which can be both powerful and challenging to understand.</p>
-        <p>For example, one alternative approach involves labeling the cards with integers and using mathematical operators to create a system of communication. These solutions tend to be less intuitive but can be effective in specific scenarios. However, they are often more complex and harder to generalize, making them less accessible to those unfamiliar with advanced mathematics.</p>
-        <p>Despite their complexity, these alternative solutions provide valuable insights into the flexibility of the Russian Cards Problem. They demonstrate that there are multiple ways to solve a problem, each with its own strengths and weaknesses. Exploring these alternatives can deepen your understanding of the problem and help you appreciate the richness of logical puzzles.</p>
+        <p>While the solution provided by Van Ditmarsch is elegant and effective, it’s not the only way to approach the Russian Cards Problem. Other methods, including number-theoretic and combinatorial approaches, offer alternative ways to solve the puzzle.
+            These methods often involve more advanced mathematical concepts, which can be both powerful and challenging to understand.</p>
+        <p>For example, one alternative approach involves labeling the cards with integers and using mathematical operators to create a system of communication. These solutions tend to be less intuitive but can be effective in specific scenarios. However,
+            they are often more complex and harder to generalize, making them less accessible to those unfamiliar with advanced mathematics.</p>
+        <p>Despite their complexity, these alternative solutions provide valuable insights into the flexibility of the Russian Cards Problem. They demonstrate that there are multiple ways to solve a problem, each with its own strengths and weaknesses. Exploring
+            these alternatives can deepen your understanding of the problem and help you appreciate the richness of logical puzzles.</p>
     </div>
 
     <div class="section" id="section-0-6">
         <h3>6 Number-Theoretic Approach</h3>
-        <p>One specific alternative is the number-theoretic approach, as explored by Tor Hagland et al. In this method, the cards are labeled with integers from 0 to 6, and mathematical operations, such as the modulo operator, are used to construct a communication strategy.</p>
-        <p>This approach can be mathematically rigorous, offering a different perspective on the problem. For instance, the modulo operator allows Alice and Bob to encode information about their hands in a way that can be decoded by the other player. However, this method has its limitations.</p>
-        <p>The number-theoretic approach works best in scenarios where Alice and Bob have an equal number of cards, and Eve holds only one card. While this method is mathematically sound, it lacks the flexibility of the solution proposed by Van Ditmarsch, as it is more constrained by the specific distribution of cards.</p>
-        <p>Despite these limitations, the number-theoretic approach is a valuable tool for those interested in the mathematical underpinnings of the Russian Cards Problem. It provides an alternative way to think about the problem, offering insights into how mathematical structures can be applied to logical puzzles.</p>
+        <p>One specific alternative is the number-theoretic approach, as explored by Tor Hagland et al. In this method, the cards are labeled with integers from 0 to 6, and mathematical operations, such as the modulo operator, are used to construct a communication
+            strategy.</p>
+        <p>This approach can be mathematically rigorous, offering a different perspective on the problem. For instance, the modulo operator allows Alice and Bob to encode information about their hands in a way that can be decoded by the other player. However,
+            this method has its limitations.</p>
+        <p>The number-theoretic approach works best in scenarios where Alice and Bob have an equal number of cards, and Eve holds only one card. While this method is mathematically sound, it lacks the flexibility of the solution proposed by Van Ditmarsch,
+            as it is more constrained by the specific distribution of cards.</p>
+        <p>Despite these limitations, the number-theoretic approach is a valuable tool for those interested in the mathematical underpinnings of the Russian Cards Problem. It provides an alternative way to think about the problem, offering insights into
+            how mathematical structures can be applied to logical puzzles.</p>
         <p>Exploring this approach can be particularly rewarding for those with a strong background in mathematics, as it highlights the deep connections between logic, communication, and number theory.</p>
     </div>
 
 </body>
+
 </html>
