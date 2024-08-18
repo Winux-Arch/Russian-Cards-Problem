@@ -1,0 +1,54 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_83" height="415.00217" width="806.00427" y="-5.79898" x="-5.198" stroke="#000" fill="#ffffff"/>
+  <rect id="svg_2" height="160" width="80" y="124.5" x="111" stroke="#000" fill="#fff"/>
+  <rect id="svg_4" height="160" width="80" y="124.5" x="19" stroke="#000" fill="#fff"/>
+  <rect id="svg_6" height="160" width="80" y="124.5" x="208" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" stroke-width="0" id="svg_12" y="212.90001" x="47.39999" stroke="#000" fill="#000000">0</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_13" y="212.90001" x="139.39999" stroke="#000" fill="#fff">1</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_14" y="212.90001" x="233.39999" stroke="#000" fill="#fff">2</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_20" y="87.5" x="109.39999" stroke="#000" fill="#fff">Alice</text>
+  <rect transform="rotate(0.096224, 395.05, 66)" id="svg_25" height="120" width="60" y="6" x="365.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 466.05, 66)" id="svg_34" height="120" width="60" y="6" x="436.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 539.05, 66)" id="svg_35" height="120" width="60" y="6" x="509.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 631.05, 66)" id="svg_36" height="120" width="60" y="6" x="601.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 699.05, 66)" id="svg_37" height="120" width="60" y="6" x="669.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 766.05, 66)" id="svg_38" height="120" width="60" y="6" x="736.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 397.05, 337)" id="svg_39" height="120" width="60" y="276.99999" x="367.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 476.05, 337)" id="svg_40" height="120" width="60" y="276.99999" x="446.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 548.05, 337)" id="svg_41" height="120" width="60" y="276.99999" x="518.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 625.05, 337)" id="svg_42" height="120" width="60" y="276.99999" x="595.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 696.05, 337)" id="svg_43" height="120" width="60" y="276.99999" x="666.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 766.05, 337)" id="svg_44" height="120" width="60" y="276.99999" x="736.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 523.05, 202.976)" id="svg_46" height="120" width="60" y="142.97561" x="493.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 591.05, 202.976)" id="svg_47" height="120" width="60" y="142.97561" x="561.05036" stroke="#000" fill="#fff"/>
+  <rect transform="rotate(0.096224, 658.05, 202.976)" id="svg_48" height="120" width="60" y="142.97561" x="628.05036" stroke="#000" fill="#fff"/>
+  <line id="svg_51" y2="269" x2="701.60001" y1="267" x1="478.60001" stroke="#000" fill="none"/>
+  <line id="svg_53" y2="404" x2="585.60001" y1="270" x1="585.60001" stroke="#000" fill="none"/>
+  <line id="svg_54" y2="130" x2="585.60001" y1="2" x1="585.60001" stroke="#000" fill="none"/>
+  <line id="svg_55" y2="132" x2="699.60001" y1="130" x1="467.60002" stroke="#000" fill="none"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_57" y="74.4" x="391.60001" stroke="#000" fill="#fff">0</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_58" y="74.4" x="461.60001" stroke="#000" fill="#fff">1</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_59" y="74.4" x="531.60001" stroke="#000" fill="#fff">2</text>
+  <ellipse ry="40" rx="20" id="svg_76" cy="64.20138" cx="700.80574" stroke="#000" fill="#ff0000"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_60" y="74.4" x="693.60001" stroke="#000" fill="#fff">3</text>
+  <ellipse ry="40" rx="19.5001" id="svg_77" cy="65.20138" cx="767.30609" stroke="#000" fill="#ff0000"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_61" y="74.4" x="763.60001" stroke="#000" fill="#fff">4</text>
+  <ellipse ry="40" rx="19.5001" id="svg_78" cy="210.20215" cx="594.30518" stroke="#000" fill="#ff0000"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_62" y="211.3756" x="586.60001" stroke="#000" fill="#fff">5</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_64" y="74.4" x="629.60001" stroke="#000" fill="#fff">0</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_65" y="211.3756" x="520.60001" stroke="#000" fill="#fff">0</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_66" y="211.3756" x="654.60001" stroke="#000" fill="#fff">6</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_67" y="345.40004" x="393.60001" stroke="#000" fill="#fff">1</text>
+  <ellipse ry="40" rx="20" id="svg_79" cy="337.00001" cx="476.30456" stroke="#000" fill="#ff0000"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_68" y="345.40004" x="472.60001" stroke="#000" fill="#fff">3</text>
+  <ellipse ry="40" rx="20" id="svg_80" cy="337" cx="546.80493" stroke="#000" fill="#ff0000"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_69" y="345.40004" x="542.60001" stroke="#000" fill="#fff">5</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_71" y="345.40001" x="627.60001" stroke="#000" fill="#fff">2</text>
+  <ellipse ry="40" rx="20" id="svg_82" cy="337.00001" cx="698.30573" stroke="#000" fill="#ff0000"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_72" y="345.40001" x="696.60001" stroke="#000" fill="#fff">4</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_73" y="345.40001" x="763.60001" stroke="#000" fill="#fff">6</text>
+ </g>
+</svg>
